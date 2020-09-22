@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
+    <header>
+        <div class="scores"><a href="./highscores.html">View High Score(s)</a></div>
+
+        <div class="timer">Time/Score: <span id="time">0</span></div>
+    </header>
+    <main>
+        <!-- Quiz title -->
+        <h1 class="pageTitle" id="title">
+            Code Quiz
+        </h1>
+        <div>
+            <!-- Quiz Questions -->
+            <div id="question"></div>
+            <button id="choice1" class="choice hidden" value="1"></button>
+            <button id="choice2" class="choice hidden" value="2"></button>
+            <button id="choice3" class="choice hidden" value="3"></button>
+            <button id="choice4" class="choice hidden" value="4"></button>
+        </div>
+        <!-- Quiz description -->
+        <h2>
+            <p class="introText" id = "intro">
+                Answer the code related questions within the time limit.
+                <br />
+                Your score/time will be penalized by ten when wrong.
+                <br />  
+            </p>
+        </h2>
+        <!-- Start button -->
+        <div class="">
+
+            <button class="btn" id="startButton" type="submit">Start Quiz</button>
+            <p>
+            Enter initials: <input type="text" id="initials" max="3" />
+            <button href = "highscores.html" class="saveBtn" id="submit" type="submit">Start Quiz</button>
+            </p>
+        </div>
+    </main>
     
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
